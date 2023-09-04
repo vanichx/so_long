@@ -6,7 +6,7 @@
 /*   By: ipetruni <ipetruni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 19:59:41 by ipetruni          #+#    #+#             */
-/*   Updated: 2023/08/07 22:38:59 by ipetruni         ###   ########.fr       */
+/*   Updated: 2023/08/08 00:34:18 by ipetruni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void	free_map_to_check(t_point *point)
 		i++;
 	}
 	free(point->mapcheck);
+	free(point);
 }
 
 void	find_player_pos(t_game *game, char **map)
